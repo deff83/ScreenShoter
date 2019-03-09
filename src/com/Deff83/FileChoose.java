@@ -32,16 +32,16 @@ public class FileChoose extends JFrame {
 		JFileChooser fchoose = new JFileChooser();
 		JPanel panel = new JPanel();
 		
-		JButton buttonChoose = new JButton("Выбор папки для сохранения");
+		JButton buttonChoose = new JButton("Р’С‹Р±РѕСЂ РїР°РїРєРё РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ");
 		JTextField textf = new JTextField(3);
-		JLabel label = new JLabel("Время промежутка сохранения в секундах");
+		JLabel label = new JLabel("Р’СЂРµРјСЏ РїСЂРѕРјРµР¶СѓС‚РєР° СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃРµРєСѓРЅРґР°С…");
 		
 		buttonChoose.addActionListener(new ActionListener() {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				fchoose.setDialogTitle("Выбор папки для сохранения");
+				fchoose.setDialogTitle("Р’С‹Р±РѕСЂ РїР°РїРєРё РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ");
 				fchoose.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
 				int result = fchoose.showOpenDialog(FileChoose.this);
 				if(result==JFileChooser.APPROVE_OPTION) {
